@@ -1,3 +1,6 @@
+// TODO: command line arg to run tests?
+RUN_TEST :: false;
+
 main :: () {
     success: bool = ---;
     save_json: Save_Json = ---;
@@ -23,24 +26,29 @@ main :: () {
     save_json.flags = new_save_flags;
 
     // uncomment to test that we didn't miss any flags - assertion will fail if we did
-    assert(test_flag_adding(save_json, unlock_json));
+    #if RUN_TEST {
+        print("Testing flag adding\n");
+        assert(test_flag_adding(save_json, unlock_json));
+    }
 
     json_write_file("save_new.json", save_json);
 }
 
-// checks that all the flags in unlock_json are in save_json
-test_flag_adding :: ( save_json: Save_Json, unlock_json: Unlock_Json ) -> bool {
-    for unlocked_flag: unlock_json.flags {
-        worked := false;
-        for saved_flag: save_json.flags {
-            if compare(saved_flag, unlocked_flag) continue;
-            worked = true;
-            break;
+#if RUN_TEST {
+    // checks that all the flags in unlock_json are in save_json
+    test_flag_adding :: ( save_json: Save_Json, unlock_json: Unlock_Json ) -> bool {
+        for unlocked_flag: unlock_json.flags {
+            worked := false;
+            for saved_flag: save_json.flags {
+                if compare(saved_flag, unlocked_flag) continue;
+                worked = true;
+                break;
+            }
+            if !worked { return false; }
         }
-        if !worked { return false; }
-    }
 
-    return true;
+        return true;
+    }
 }
 
 // TODO: name better
@@ -85,4 +93,7 @@ attempt_parse_json :: (filename: string, $T: Type) -> T {
 #import "jaison";
 #import "Basic";
 #import "Hash_Table";
-#import "String";
+
+#if RUN_TEST {
+    #import "String";
+}
