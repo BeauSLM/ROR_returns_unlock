@@ -1,0 +1,4 @@
+/.build/
+/test.json
+/out/
+/save*.json

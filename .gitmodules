@@ -1,0 +1,6 @@
+[submodule "modules/jaison"]
+	path = modules/jaison
+	url = https://github.com/rluba/jaison.git
+[submodule "modules/unicode_utils"]
+	path = modules/unicode_utils
+	url = https://github.com/rluba/jai-unicode.git

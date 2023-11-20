@@ -1,0 +1,79 @@
+{
+  "flags": [
+    "challenge_unlock_engineer_completed",
+    "challenge_unlock_bandit_completed",
+    "challenge_unlock_enforcer_completed",
+    "challenge_unlock_hand_completed",
+    "challenge_unlock_miner_completed",
+    "challenge_unlock_sniper_completed",
+    "challenge_unlock_sniperacrid_completed",
+    "challenge_unlock_mercenary_completed",
+    "challenge_unlock_loader_completed",
+    "challenge_unlock_chef_completed",
+    "challenge_unlock_pilot_completed",
+    "challenge_unlock_artificer_completed",
+    "challenge_unlock_drifter_completed",
+
+    "challenge_unlock_engi_x2_completed",
+    "challenge_unlock_engi_c2_completed",
+    "challenge_unlock_engi_v2_completed",
+
+    "challenge_unlock_enforcer_z2_completed",
+    "challenge_unlock_enforcer_x2_completed",
+    "challenge_unlock_enforcer_v2_completed",
+
+    "challenge_unlock_huntress_z2_completed",
+    "challenge_unlock_huntress_x2_completed",
+    "challenge_unlock_huntress_c2_completed",
+    "challenge_unlock_huntress_v2_completed",
+
+    "challenge_unlock_commando_z2_completed",
+    "challenge_unlock_commando_x2_completed",
+    "challenge_unlock_commando_c2_completed",
+    "challenge_unlock_commando_v2_completed",
+
+    "challenge_unlock_bandit_z2_completed",
+    "challenge_unlock_bandit_c2_completed",
+    "challenge_unlock_bandit_v2_completed",
+
+    "challenge_unlock_hand_x2_completed",
+    "challenge_unlock_hand_x3_completed",
+    "challenge_unlock_hand_v2_completed",
+
+    "challenge_unlock_miner_z2_completed",
+    "challenge_unlock_miner_x2_completed",
+    "challenge_unlock_miner_c2_completed",
+
+    "challenge_unlock_sniper_z2_completed",
+    "challenge_unlock_sniper_x2_completed",
+    "challenge_unlock_sniper_c2_completed",
+
+    "challenge_unlock_acrid_z2_completed",
+    "challenge_unlock_acrid_x2_completed",
+    "challenge_unlock_acrid_c2_completed",
+
+    "challenge_unlock_mercenary_x2_completed",
+    "challenge_unlock_mercenary_c2_completed",
+    "challenge_unlock_mercenary_v2_completed",
+
+    "challenge_unlock_loader_z2_completed",
+    "challenge_unlock_loader_x2_completed",
+    "challenge_unlock_loader_v2_completed",
+
+    "challenge_unlock_chef_z2_completed",
+    "challenge_unlock_chef_c2_completed",
+    "challenge_unlock_chef_v2_completed",
+
+    "challenge_unlock_pilot_z2_completed",
+    "challenge_unlock_pilot_c2_completed",
+    "challenge_unlock_pilot_v2_completed",
+
+    "challenge_unlock_drifter_x2_completed",
+    "challenge_unlock_drifter_c2_completed",
+    "challenge_unlock_drifter_v2_completed",
+
+    "challenge_unlock_arti_x2_completed",
+    "challenge_unlock_arti_c2_completed",
+    "challenge_unlock_arti_v2_completed"
+  ]
+}
