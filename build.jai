@@ -6,7 +6,7 @@
 
     options := get_build_options();
 
-    options.output_executable_name = "rorreturnsunlock";
+    options.output_executable_name = "ror_unlocks";
     options.output_path = "./out/";
 
     // TODO: why just why
