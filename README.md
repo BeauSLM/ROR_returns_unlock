@@ -11,18 +11,16 @@ article](https://gameplay.tips/guides/risk-of-rain-returns-how-to-get-infinite-i
 
 # Usage
 
-TODO
+Read the article linked above to find where your `save.json` file is.
 
-My plan is to automate building the latest code (gh actions?) and adding the
-executable to the repository so people can download it and run it.
+Once that's done, using this tool is very simple:
 
-The usage I've imagined (though this may be terrible) is people place the exe
-and unlocked.json in the same dir as their save.json and just double click it
-to run it.
+1. Download `ror_unlocks.exe` and `unlocked.json`
+2. Place them in the same folder as `save.json` (can drag and drop in file explorer).
+3. Double click `ror_unlocks.exe` to run it, and it will update your `save.json`,
+    backing up the previous version to `save_old.json`.
 
-Also I've added the file `json/unlock.json` which has all the flags that can be
-put in your own `save.json`'s `flags` field to unlock stuff so just use that if
-you want to copy-paste instead.
+That's it! You should have all the characters and abilities unlocked!
 
 ## Unplanned
 
@@ -51,7 +49,7 @@ I considered c but building c is grossly overcomplicated, which is exacerbated
 by the fact that I'm writing this on MacOS, while it's meant to be used on
 windows. If I was to write this in c I'd need two principle dependencies:
 
-1. json parser
+1. json utils (deserialize, modify, and serialize)
 2. set (one of each element) data structure
 
 I'm not interested in writing these myself cause I want this to be quick, and
