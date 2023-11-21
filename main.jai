@@ -2,13 +2,18 @@
 RUN_TEST :: false;
 
 main :: () {
-    success: bool = ---;
     save_json: Save_Json = ---;
     unlock_json: Unlock_Json = ---;
 
-    save_json = attempt_parse_json("save.json", Save_Json);
+    // backup `save.json`
+    if !copy_file(SAVE_FILE, BACKUP_FILE) {
+        print("Failed to backup save.json - aborting\n");
+        exit(1);
+    }
 
-    unlock_json = attempt_parse_json("unlocked.json", Unlock_Json);
+    save_json = attempt_parse_json(SAVE_FILE, Save_Json);
+
+    unlock_json = attempt_parse_json(BACKUP_FILE, Unlock_Json);
 
     flag_set: Table(string, void);
     init(*flag_set, save_json.flags.count * 2); // XXX: could use ensure_space but we're dealing with <10k items so its probably fine?
@@ -39,7 +44,7 @@ main :: () {
         }
     }
 
-    json_write_file("save_new.json", save_json);
+    json_write_file(SAVE_FILE, save_json);
 }
 
 // TODO: name better
@@ -81,6 +86,11 @@ attempt_parse_json :: (filename: string, $T: Type) -> T {
     return file;
 }
 
+SAVE_FILE :: "save.json";
+BACKUP_FILE :: "save_old.json";
+UNLOCKS_FILE :: "unlocked.json";
+
 #import "jaison";
 #import "Basic";
 #import "Hash_Table";
+#import "File_Utilities";
