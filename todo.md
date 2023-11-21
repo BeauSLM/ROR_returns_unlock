@@ -1,2 +1,0 @@
-- [ ] rename save.json -> save_old.json and save new thing to save.json
-- [ ] fix json/ reference in readme
