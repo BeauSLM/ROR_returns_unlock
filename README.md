@@ -9,7 +9,7 @@ article](https://gameplay.tips/guides/risk-of-rain-returns-how-to-get-infinite-i
 - [x] character abilities
 - [x] items
 
-# Usage
+## Usage
 
 Read the article linked above to find where your `save.json` file is.
 
@@ -39,7 +39,7 @@ save_new.json so it doesn't overwrite the old save.json file
 
 I haven't really tested this but I'll write a couple at some point I think.
 
-# Why in jai?
+## Why in jai?
 
 I really like programming it, anyone can run the compiled executable (vs some
 kind of script where the user needs the scripting language installed and the
