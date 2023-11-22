@@ -7,7 +7,7 @@ article](https://gameplay.tips/guides/risk-of-rain-returns-how-to-get-infinite-i
 
 - [x] characters
 - [x] character abilities
-- [ ] items
+- [x] items
 
 # Usage
 
