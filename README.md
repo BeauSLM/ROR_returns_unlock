@@ -60,3 +60,13 @@ dependencies then I'll go ahead and rewrite in c. (No c++ please).
 
 The stb-style single header approach generally works well but I didn't want to
 hunt for libs that are like this and cross-platform.
+
+## Resources:
+
+Some helpful links I found for doing this:
+
+- https://github.com/GeorgeJoestar/RORR_item_description_mod/tree/main
+- https://gameplay.tips/guides/risk-of-rain-returns-save-editor-for-the-game.html
+- https://gameplay.tips/guides/risk-of-rain-returns-save-file-everything-unlocked.html
+- https://www.reddit.com/r/riskofrain/comments/17ryb5h/risk_of_rain_returns_save_file/
+- https://steamcommunity.com/sharedfiles/filedetails/?id=3077216365
