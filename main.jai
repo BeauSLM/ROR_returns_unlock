@@ -17,7 +17,7 @@ main :: () {
     }
 
     save_json   := attempt_parse_json(SAVE_FILE, Save_Json);
-    unlock_json := attempt_parse_json(backup_file, Unlock_Json);
+    unlock_json := attempt_parse_json("unlocked.json", Unlock_Json);
 
     flag_set: Table(string, void) = ---;
     init(*flag_set, save_json.flags.count * 2); // XXX: could use ensure_space but we're dealing with <10k items so its probably fine?
